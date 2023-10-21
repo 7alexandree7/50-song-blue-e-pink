@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+
+:root {
+    --font:  'Poppins', sans-serif;
+    --header__color: #000000c9;
+    --white: #fff;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body, html {
+    font-family: var(--font);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background: url("../img/image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.topo {
+    padding: 1rem 5rem;
+}
+
+
+.navegation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.list__box {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+
+.list__box a {
+    text-decoration: none;
+    color: var(--header__color);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.logo__box {
+    padding-top: 3.5rem;
+}
+
+
+
+.content {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    width: 88%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+.title {
+    font-size: 100px;
+    color: var(--white);
+    width: 25%;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+
+.song__box {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    cursor: pointer;
+}
+
+
+.txt {
+    font-size: 20px;
+    color: #292828dc;
+    font-weight: 400;
+}
+
+
+
+.img__music {
+    width: 100px;
+}
+
+
+
+@media (max-width: 1380px) {
+    .topo {
+        padding: 1rem;
+    }
+
+
+    .list__box {
+        gap: 1.5rem;
+    }
+
+
+    .list__box a {
+        font-size: 15px;
+    }
+}
